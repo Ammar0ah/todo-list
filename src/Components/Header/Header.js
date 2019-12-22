@@ -1,5 +1,5 @@
 import React from 'react';
-import Router from '../Router';
+import Router from '../Router/Router';
 
 class Header extends React.Component {
     navigateTo = path => e => {

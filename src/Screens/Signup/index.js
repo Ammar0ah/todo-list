@@ -5,8 +5,9 @@ import {
     minLength,
 } from '../../Services/Validators';
 
-import FormBuilder from '../../Components/Form/Builder';
+
 import asEntity from '../../Hocs/asEntity';
+import FormBuilder from '../../components/Form/Builder/FormBuilder';
 class SignupScreen extends FormBuilder {
     constructor(props) {
         super(props);
