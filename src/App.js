@@ -1,4 +1,5 @@
 import React from 'react';
+<<<<<<< HEAD
 import logo from './logo.svg';
 import './App.css';
 import Form from './components/Form/Form'
@@ -29,6 +30,40 @@ function App() {
               ]}/>
     </div>
     
+=======
+import { Provider } from 'react-redux';
+
+import Router from './Components/Router';
+import Header from './Components/Header';
+import Login from './Screens/Login';
+import Signup from './Screens/Signup';
+
+import createStore from './Redux'
+
+const store = createStore();
+
+function App() {
+  return (
+    <Provider store={store}>
+      <div className="App">
+          <Header />
+          
+          <Router
+            routes={[
+              {
+                path: '/login',
+                component: <Login />,
+                default: true,
+              },
+              {
+                path: '/signup',
+                component: <Signup />,
+              },
+            ]}
+          />
+        </div>
+    </Provider>
+>>>>>>> adde20e55ded66460bfda3d209e6fc246d172f37
   );
 }
 
